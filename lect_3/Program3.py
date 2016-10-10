@@ -1,8 +1,8 @@
 # coding: utf-8
 x = input()
 y = input()
-# y = round(y)
-# x = round(x)
+y = int(y)
+x = int(x)
 
 
 def division(m, n):
