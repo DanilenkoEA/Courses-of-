@@ -9,16 +9,28 @@ maximum = 6
 if maximum < a1:
     maximum = a1
     print maximum
-elif maximum < a2:
+else:
+    print maximum
+
+if maximum < a2:
     maximum = a2
     print maximum
-elif maximum < a3:
+else:
+    print maximum
+
+if maximum < a3:
     maximum = a3
     print maximum
-elif maximum < a4:
+else:
+    print maximum
+
+if maximum < a4:
     maximum = a4
     print maximum
-elif maximum < a5:
+else:
+    print maximum
+
+if maximum < a5:
     maximum = a5
     print maximum
 else:
