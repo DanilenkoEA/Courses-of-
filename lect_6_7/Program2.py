@@ -1,16 +1,20 @@
 # coding: utf-8
 x = 0
 y = 0
-znak = ""
-input_correct = False
+z = ""
+znachenie = False
 
-while input_correct == False:
-    x = int(input("Enter number on horizontal\t"))
-    y = int(input("Enter number on vertical\t"))
-    znak = raw_input("Select mark: X or O\t").upper()
+while znachenie == False:
+    x = int(input("Введите значение X(от 1 до 3) \t"))
+    y = int(input("Введите значение Y (от 1 до 3) \t"))
+    z = raw_input("Крестик или Нолик? :) (X или О)\t").upper()
 
-    if x < 1 or x > 3 or y < 1 or y > 3 or znak != "0" and znak != "X":
-        print (u"Значения X и Y должны быть от 1 до 3")
+    if x < 1 or x > 3:
+        print ("Значения X должно быть от 1 до 3")
+    elif y < 1 or y > 3:
+        print ("Значения Y должно быть от 1 до 3")
+    elif z != "0" and z != "O" and z != "X":
+        print ("Значение знака введено неверно")
     else:
-        print "%s,%s:%s" % (x, y, znak)
-        input_correct = True
+        print "%s,%s:%s" % (x, y, z)
+        znachenie = True

@@ -1,24 +1,25 @@
 # coding: utf-8
 
-x = raw_input("Enter value\n")
+y = raw_input("Enter value\t\n")
+x = ''.join(y.split())
 
 if "+" in x:
-    first = x[:x.index("+")]
-    second = x[x.index("+")+1:]
+    first = x[:x.find("+")]
+    second = x[x.find("+")+1:]
     print float(first) + float(second)
 elif "-" in x:
-    first = x[:x.index("-")]
-    second = x[x.index("-")+1:]
+    first = x[:x.find("-")]
+    second = x[x.find("-")+1:]
     print float(first) - float(second)
 elif "*" in x:
-    first = x[:x.index("*")]
-    second = x[x.index("*")+1:]
+    first = x[:x.find("*")]
+    second = x[x.find("*")+1:]
     print float(first) * float(second)
 elif "/" in x:
-    first = x[:x.index("/")]
-    second = x[x.index("/")+1:]
+    first = x[:x.find("/")]
+    second = x[x.find("/")+1:]
     print float(first) / float(second)
 elif "%" in x:
-    first = x[:x.index("%")]
-    second = x[x.index("%")+1:]
-    print int(first) % float(second)
+    first = x[:x.find("%")]
+    second = x[x.find("%")+1:]
+    print float(first) % float(second)

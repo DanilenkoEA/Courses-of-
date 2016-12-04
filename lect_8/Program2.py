@@ -1,14 +1,14 @@
 # coding: utf-8
-read = open("tutorial.txt")
-write = open("write.txt", "w")
-line = read.readlines()
-for i in line:
+f = open("tutorial.txt")
+r = open("write.txt", "w")
+file = f.readlines()
+for i in file:
     if "1" in i:
         continue
     if "2" in i:
         continue
     if "8" in i:
         break
-    write.write(i)
-write.close()
-read.close()
+    r.write(i)
+r.close()
+f.close()
